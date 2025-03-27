@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/static/style.css" />
+    <title>Heart Disease Prediction</title>
+</head>
+<body>
+    <h1>Heart Disease Prediction Form</h1>
+    <form action="/predict" method="post">
+        <label>Age: <input type="number" name="age" required /></label><br />
+        <label>Gender (1=Male, 0=Female): <input type="number" name="male" required /></label><br />
+        <label>Current Smoker (1=Yes, 0=No): <input type="number" name="currentSmoker" required /></label><br />
+        <label>Cigs Per Day: <input type="number" name="cigsPerDay" required /></label><br />
+        <label>SysBP: <input type="number" name="sysBP" required /></label><br />
+        <label>DiaBP: <input type="number" name="diaBP" required /></label><br />
+        <label>BMI: <input type="number" name="BMI" required /></label><br />
+        <label>Heart Rate: <input type="number" name="heartRate" required /></label><br />
+        <label>Glucose: <input type="number" name="glucose" required /></label><br />
+        <button type="submit">Predict</button>
+    </form>
+</body>
+</html>
